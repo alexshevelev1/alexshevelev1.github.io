@@ -122,15 +122,6 @@ iframe {
 	padding: 0px!important;
 }
 
-.close {
-	text-shadow: none!important;
-	opacity: 1!important;
-	color: #fff!important;
-	padding: 0;
-    background-color: none!important;
-    padding-right: 5px!important;
-}
-
 button:focus, button:active {
     outline: none!important;
 }
