@@ -9,14 +9,14 @@ function autoPlayYouTubeModal(){
   trigger.click(function() {
     var theModal = $(this).data( "target" ),
     videoSRC = $(this).attr( "data-theVideo" ), 
-    videoSRCauto = videoSRC+"?autoplay=1" ;
+    videoSRCauto = videoSRC+"?autoplay=0" ;
     $(theModal+' iframe').attr('src', videoSRCauto);
     $(theModal+' button.close').click(function () {
         $(theModal+' iframe').attr('src', videoSRC);
     });   
   });
     $("#videoModal").on('hidden.bs.modal', function(e) {
-      $("#iframe").attr("src", '');
+      $("#videoModal iframe").attr("src", '');
     });
 }
 
